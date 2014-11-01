@@ -1,0 +1,100 @@
+---
+layout: default
+title: Home
+---
+
+<div id="container1" class="container">
+  <div id="box1" class="box">Box 1</div>
+  <div id="box2" class="box">Box 2</div>
+</div>
+
+<div id="container1a" class="container">
+  <div id="box1" class="box">Box 1 // space-between</div>
+  <div id="box2" class="box">Box 2</div>
+</div>
+
+<div id="container1b" class="container">
+  <div id="box1" class="box">Box 1 // space-around</div>
+  <div id="box2" class="box">Box 2</div>
+</div>
+
+<hr/>
+
+<div id="container2" class="container">
+  <div id="box1" class="box">Box 1 // flex-grow: 2</div>
+  <div id="box2" class="box">Box 2 // flex-grow: 2</div>
+</div>
+
+<div id="container3" class="container">
+  <div id="box1" class="box">Box 1</div>
+  <div id="box2" class="box">Box 2 // flex-grow: 2</div>
+  <div id="box3" class="box">Box 3</div>
+</div>
+
+<div id="container4" class="container">
+  <div id="box1" class="box">Box 1, with dynamic width set by this text</div>
+  <div id="box2" class="box">Box 2 // flex-grow: 2</div>
+  <div id="box3" class="box">Box 3 largeeeeer</div>
+</div>
+
+<hr/>
+
+
+<div id="container5" class="container">
+  <div id="box1" class="box">Box 1, flex-basis: 25%</div>
+  <div id="box2" class="box">Box 2, flex-basis: 50%</div>
+  <div id="box3" class="box">Box 3, flex-basis: 25%</div>
+</div>
+
+
+<hr/>
+
+
+<div id="container6" class="container">
+  <div id="box1" class="box">
+    <p>Box 1, flex-basis: 25%</p>
+    <p>@include flexbox($direction: column, $align-items: center, $justify-content: center);</p>
+    <p>text-align: center</p>
+  </div>
+  <div id="box2" class="box">Box 2, flex-basis: 50%</div>
+  <div id="box3" class="box">Box 3, flex-basis: 25%</div>
+</div>
+
+<hr/>
+
+<div id="container7" class="container">
+  <p>Mobile version:</p>
+  <div id="box1" class="box">
+    <p>Box 1, flex-basis: 25%</p>
+    <p>@include flexbox($direction: column, $align-items: center, $justify-content: center);</p>
+    <p>text-align: center</p>
+  </div>
+  <div id="box2" class="box">Box 2, flex-basis: 50%</div>
+  <div id="box3" class="box">Box 3, flex-basis: 25%</div>
+</div>
+
+
+<hr/>
+
+<div id="container8" class="container">
+  Playing with masonry
+  <div id="box1" class="box">Box 1, flex-basis: 25%, height: 10em</div>
+  <div id="box2" class="box">Box 2, flex-basis: 50%</div>
+  <div id="box3" class="box">Box 3, flex-basis: 25%</div>
+  <div id="box4" class="box">Box 4, flex-basis: 25%, height: 10em</div>
+  <div id="box5" class="box">Box 5, flex-basis: 50%, height: 2em</div>
+  <div id="box6" class="box">Box 6, flex-basis: 25%, height: 20em</div>
+  <div id="box7" class="box">Box 7, flex-basis: 25%, height: 10em</div>
+  <div id="box8" class="box">Box 8, flex-basis: 50%</div>
+  <div id="box9" class="box">Box 9, flex-basis: 25%</div>
+</div>
+
+
+<hr/>
+
+<ol>
+  <li>1. Everything inside a flexbox is a flex item, automatically. Even :before , :after etc.</li>
+  <li>2. Content size does not necesarilly fit inside a flex item. It can overflow, or items positioned over each other. Check mobile versions</li>
+  <li>3. Don't make something responsive by changing $direction from row to column. Instead use wrap</li>
+  <li>4. If height not set for every item in a row all items will have the height of the tallest item</li>
+</ol>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="home default ">
+  <head>
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="author" href="humans.txt" />
+    
+    <title>Home &mdash; Flexbox</title> 
+    
+    <!-- Compass with SASS -->
+    
+      <link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    
+    <!-- IE 9 -->
+    <!--[if lt IE 9]>
+    <link href="/assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="/assets/scripts/html5shiv.min.js"></script>
+<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/assets/scripts/css3-mediaqueries.js"></script>
+<![endif]-->
+    <!-- via Favicomatic -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://its-csongor.com/assets/images/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://its-csongor.com/assets/images/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://its-csongor.com/assets/images/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://its-csongor.com/assets/images/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://its-csongor.com/assets/images/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://its-csongor.com/assets/images/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://its-csongor.com/assets/images/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://its-csongor.com/assets/images/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="http://its-csongor.com/assets/images/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="http://its-csongor.com/assets/images/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="http://its-csongor.com/assets/images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="http://its-csongor.com/assets/images/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="http://its-csongor.com/assets/images/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="Csongor Bartus"/>
+<meta name="msapplication-TileColor" content="#F1F1F1" />
+<meta name="msapplication-TileImage" content="http://its-csongor.com/assets/images/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="http://its-csongor.com/assets/images/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="http://its-csongor.com/assets/images/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="http://its-csongor.com/assets/images/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="http://its-csongor.com/assets/images/mstile-310x310.png" />
+
+    
+    <!-- Picturefill Responsive Images -->
+    <script async src="/assets/scripts/picturefill.min.js"></script>
+  </head>
+  
+  <body>
+    
+    
+
+
+<div id="container1" class="container">
+  <div id="box1" class="box">Box 1</div>
+  <div id="box2" class="box">Box 2</div>
+</div>
+
+<div id="container1a" class="container">
+  <div id="box1" class="box">Box 1 // space-between</div>
+  <div id="box2" class="box">Box 2</div>
+</div>
+
+<div id="container1b" class="container">
+  <div id="box1" class="box">Box 1 // space-around</div>
+  <div id="box2" class="box">Box 2</div>
+</div>
+
+<hr/>
+
+<div id="container2" class="container">
+  <div id="box1" class="box">Box 1 // flex-grow: 2</div>
+  <div id="box2" class="box">Box 2 // flex-grow: 2</div>
+</div>
+
+<div id="container3" class="container">
+  <div id="box1" class="box">Box 1</div>
+  <div id="box2" class="box">Box 2 // flex-grow: 2</div>
+  <div id="box3" class="box">Box 3</div>
+</div>
+
+<div id="container4" class="container">
+  <div id="box1" class="box">Box 1, with dynamic width set by this text</div>
+  <div id="box2" class="box">Box 2 // flex-grow: 2</div>
+  <div id="box3" class="box">Box 3 largeeeeer</div>
+</div>
+
+<hr/>
+
+
+<div id="container5" class="container">
+  <div id="box1" class="box">Box 1, flex-basis: 25%</div>
+  <div id="box2" class="box">Box 2, flex-basis: 50%</div>
+  <div id="box3" class="box">Box 3, flex-basis: 25%</div>
+</div>
+
+
+<hr/>
+
+
+<div id="container6" class="container">
+  <div id="box1" class="box">
+    <p>Box 1, flex-basis: 25%</p>
+    <p>@include flexbox($direction: column, $align-items: center, $justify-content: center);</p>
+    <p>text-align: center</p>
+  </div>
+  <div id="box2" class="box">Box 2, flex-basis: 50%</div>
+  <div id="box3" class="box">Box 3, flex-basis: 25%</div>
+</div>
+
+<hr/>
+
+<div id="container7" class="container">
+  <p>Mobile version:</p>
+  <div id="box1" class="box">
+    <p>Box 1, flex-basis: 25%</p>
+    <p>@include flexbox($direction: column, $align-items: center, $justify-content: center);</p>
+    <p>text-align: center</p>
+  </div>
+  <div id="box2" class="box">Box 2, flex-basis: 50%</div>
+  <div id="box3" class="box">Box 3, flex-basis: 25%</div>
+</div>
+
+
+<hr/>
+
+<div id="container8" class="container">
+  Playing with masonry
+  <div id="box1" class="box">Box 1, flex-basis: 25%, height: 10em</div>
+  <div id="box2" class="box">Box 2, flex-basis: 50%</div>
+  <div id="box3" class="box">Box 3, flex-basis: 25%</div>
+  <div id="box4" class="box">Box 4, flex-basis: 25%, height: 10em</div>
+  <div id="box5" class="box">Box 5, flex-basis: 50%, height: 2em</div>
+  <div id="box6" class="box">Box 6, flex-basis: 25%, height: 20em</div>
+  <div id="box7" class="box">Box 7, flex-basis: 25%, height: 10em</div>
+  <div id="box8" class="box">Box 8, flex-basis: 50%</div>
+  <div id="box9" class="box">Box 9, flex-basis: 25%</div>
+</div>
+
+
+<hr/>
+
+<ol>
+  <li>1. Everything inside a flexbox is a flex item, automatically. Even :before , :after etc.</li>
+  <li>2. Content size does not necesarilly fit inside a flex item. It can overflow, or items positioned over each other. Check mobile versions</li>
+  <li>3. Don't make something responsive by changing $direction from row to column. Instead use wrap</li>
+  <li>4. If height not set for every item in a row all items will have the height of the tallest item</li>
+</ol>
+
+
+<!-- jQuery from CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Site specific scripts  -->
+<script src="/assets/scripts/jquery.init.js"></script>
+
+
+</body>
+</html>

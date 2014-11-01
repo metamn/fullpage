@@ -1,0 +1,117 @@
+html {
+  body {
+    .box {
+      @include box;
+      @include flex-item;
+    }
+    
+    hr {
+      margin: 1em 0;
+    }
+    
+    ol {
+      margin: 1em;
+      
+      li {
+        margin-bottom: 1em;
+      }
+    }
+    
+    #container1 {
+      @include flexbox;
+    }
+    
+    #container1a {
+      @include flexbox($justify-content: space-between);
+    }
+    
+    #container1b {
+      @include flexbox($justify-content: space-around);
+    }
+    
+    
+    #container2 {
+      @include flexbox;
+
+      .box {
+        @include flex-item($flex-grow: 2);
+      }
+    }
+    
+    #container3, #container4 {
+      @include flexbox;
+      
+      #box2 {
+        @include flex-item($flex-grow: 2);
+      }
+    }
+    
+    
+    #container5, #container6, #container7, #container8 {
+      @include flexbox;
+      
+      #box1, #box3 {
+        @include flex-basis(25%);
+      }
+      
+      #box2 {
+        @include flex-basis(50%);
+      }
+    }
+    
+    #container6, #container7 {
+      @include flexbox($align-items: center);
+      height: 30em;
+      background: lightblue;
+      
+      .box {
+        @include flexbox($direction: column, $align-items: center, $justify-content: center);
+        height: 10em;
+        text-align: center;
+        
+        p {
+          @include box;
+        }
+      }
+    }
+    
+    #container7 {
+      @include mobile {
+        @include flexbox($wrap: wrap);
+        height: auto;
+        
+        #box1, #box2, #box3 {
+          @include flex-basis(100%);
+          height: auto;
+        }
+      }
+    }
+    
+    
+    #container8 {
+      @include flexbox($wrap: wrap);
+      
+      #box4, #box6, #box7, #box9 {
+        @include flex-basis(25%);
+      }
+      
+      #box5, #box8 {
+        @include flex-basis(50%);
+      }
+      
+      #box1, #box4, #box7 {
+        height: 10em;
+      }
+      
+      #box5 {
+        height: 2em;
+      }
+      
+      #box6 {
+        height: 20em;
+      }
+    }
+    
+    
+  }
+}
