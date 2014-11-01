@@ -1,8 +1,8 @@
 permalink: /:title
 
-title: Flexbox
+title: Fullpage
 images: assets/images
-#url: http://metamn.github.io/flexbox
+#url: http://metamn.github.io/fullpage
 
 
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', '_scripts/*']
